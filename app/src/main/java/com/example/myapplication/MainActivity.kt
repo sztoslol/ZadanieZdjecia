@@ -1,11 +1,14 @@
 package com.example.myapplication
 
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.core.widget.ImageViewCompat
+import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         findViewById<ImageView>(R.id.zdjecia).setImageResource(R.drawable.adrian1)
         var zdj = 1
+        var rotacja = 0
         findViewById<Button>(R.id.dalej).setOnClickListener {
             if(zdj == 1)
             {
@@ -54,8 +58,10 @@ class MainActivity : AppCompatActivity() {
             zdj--
         }
         findViewById<Button>(R.id.pozycjaLewo).setOnClickListener {
-            var rotacja = 0
-            if(findViewById<EditText>(R.id.te))
+            rotacja = findViewById<TextView>(R.id.Rotacjatext).toString().toInt()
+                findViewById<ImageView>(R.id.zdjecia).setRotationY(
+                    findViewById<ImageView>(R.id.zdjecia).rotationY + rotacja
+                )
         }
     }
 }
