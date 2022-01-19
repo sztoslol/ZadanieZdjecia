@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/wroc"
+        android:id="@+id/WrocBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="back"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.342" />
 
     <Button
-        android:id="@+id/dalej"
+        android:id="@+id/DalejBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="next"
@@ -31,7 +31,7 @@
         app:layout_constraintVertical_bias="0.342" />
 
     <Button
-        android:id="@+id/skala"
+        android:id="@+id/SkalaBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Skala"
@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.73" />
 
     <Button
-        android:id="@+id/alfa"
+        android:id="@+id/AlfaBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kanał alfa"
@@ -55,7 +55,7 @@
         app:layout_constraintVertical_bias="0.959" />
 
     <ImageView
-        android:id="@+id/zdjecia"
+        android:id="@+id/obraz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,7 +67,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/pozycjaLewo"
+        android:id="@+id/PozLewaBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lewo"
@@ -79,7 +79,7 @@
         app:layout_constraintVertical_bias="0.524" />
 
     <Button
-        android:id="@+id/pozycjaPrawo"
+        android:id="@+id/PozPrawaBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Prawo"
@@ -89,30 +89,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.524" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/Skala"
-        android:layout_width="204dp"
-        android:layout_height="48dp"
-        android:hint="skala"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.636" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/Alfa"
-        android:layout_width="204dp"
-        android:layout_height="48dp"
-        android:hint="alfa"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.846" />
 
     <EditText
         android:id="@+id/Rotacjatext"
@@ -126,6 +102,34 @@
         app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441" />
+        app:layout_constraintVertical_bias="0.441"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/SkalaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616" />
+
+    <EditText
+        android:id="@+id/AlfaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
